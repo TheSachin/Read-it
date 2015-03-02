@@ -1,0 +1,28 @@
+.Headline
+{
+	
+}
+
+#perDayBox
+{
+	position: relative;
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+#perDayToRead
+{
+	width: 45%;
+	margin: 0 auto;
+	height: 100px;
+	font-size: 50px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	position: absolute;
+ 	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+

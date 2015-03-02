@@ -1,0 +1,16 @@
+<template name="layout">
+  <div class="container-fluid">
+    <header class="navbar navbar-default pageView" role="navigation"> 
+      <div class="navbar-header">
+        <a class="navbar-brand" href="{{pathFor 'profile'}}">Signout/Signin</a>
+      </div>
+    </header>
+    <div id="main">
+      {{> yield}}
+    </div>
+    	
+  	</div>
+    <div id="footer">
+        {{> footerNavigation}}
+      </div>
+</template>

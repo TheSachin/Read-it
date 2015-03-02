@@ -1,0 +1,17 @@
+<template name="updateBook">
+	{{#with BookDetails}}
+	<div class="text-center">
+		<div class="h2">I am reading</div>
+		<hr>
+		<h1>{{name}}<small> by {{author}}</small></h1>  
+		<h3>Today target</h3>
+		<div class="jumbotron" id="perDayBox">
+				<div id="perDayToRead">
+				{{perDayToRead}}
+				</div>
+		</div>
+		<!-- progress bar -->
+		</div>
+	
+	{{/with}}
+</template>
