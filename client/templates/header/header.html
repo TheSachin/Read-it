@@ -1,0 +1,11 @@
+<template name="header">
+    <nav class="navbar navbar-default">
+        <a class="navbar-brand" href="{{pathFor 'updateBook'}}">Read.it</a>
+        <ul class="nav navbar-nav" id="SignOption">
+            <li><a href="/profile" id="profile" class="navbar-nav pull-right">
+                {{userLoginStatus}}
+            </a></li>
+        </ul>
+    </nav>
+
+</template>

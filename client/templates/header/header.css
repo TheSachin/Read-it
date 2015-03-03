@@ -1,0 +1,18 @@
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+}
+
+#SignOption {
+    float: right;
+
+}
+
+ul#SignOption a#profile {
+    background-color: #B6B6B6;
+
+}
