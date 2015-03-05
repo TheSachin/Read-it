@@ -1,11 +1,23 @@
 <template name="header">
     <nav class="navbar navbar-default">
-        <a class="navbar-brand" href="{{pathFor 'updateBook'}}">Read.it</a>
-        <ul class="nav navbar-nav" id="SignOption">
-            <li><a href="/profile" id="profile" class="navbar-nav pull-right">
-                {{userLoginStatus}}
-            </a></li>
-        </ul>
+        <div class="navbar-header">
+            <a class="navbar-brand" id="brandName" href="{{pathFor 'updateBook'}}">Brand</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#menu-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collpase navbar-collapse" id="menu-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="{{pathFor 'addBook'}}">Add Book</a></li>
+                <li><a href="{{pathFor 'profile'}}">Profile</a></li>
+                <li><a href="{{pathFor 'ViewBookList'}}">ViewBookList</a></li>
+            </ul>
+        </div>
+
     </nav>
 
 </template>
