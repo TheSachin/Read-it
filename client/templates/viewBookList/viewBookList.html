@@ -1,0 +1,22 @@
+<template name="ViewBookList">
+    <div class="list-group media-list">
+        {{#each BooksList}}
+            <div class="list-group-item
+            {{#if hasFinished }} list-group-item-success {{/if}}
+                {{#unless hasFinished }} list-group-item-warning {{/unless}}
+
+        ">
+                <a href="{{pathFor 'updateBook' id =_id }}" class="media">
+                    <div class="media-left">
+                        <img class="media-object img-responsive
+
+               " src="/book_avatar.png" style="width: 40px;">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">{{name}}</h4>
+                    </div>
+                </a>
+            </div>
+        {{/each}}
+    </div>
+</template>
