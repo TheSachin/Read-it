@@ -6,7 +6,6 @@
 
 meteor-platform
 insecure
-twbs:bootstrap
 jquery
 iron:router
 mizzao:bootstrap-3
